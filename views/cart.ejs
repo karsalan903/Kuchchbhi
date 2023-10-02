@@ -1,0 +1,19 @@
+<%- include ('./partials/header.ejs') %>
+    <div class="container p-3">
+        <h1>Cart</h1>
+        <hr>
+        <div class="d-flex flex-column align-items-start" style="gap: 40px;">
+            <% cart.forEach(function(elem){ %>
+                <% if(loggedInUser.cart.indexOf(elem._id) !== -1){ %>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                        <h5 class="card-title"><%= elem.name %></h5>
+                        <h6>Sold by: <%= elem.userid.username %></h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                <% } %>
+            <% }) %>
+        </div>
+    </div>
+<%- include ('./partials/footer.ejs') %>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../stylesheets/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" rel="stylesheet"/>
+</head>
+<body style="overflow: hidden;">
+  <section class="vh-100">
+    <div class="container-fluid h-custom">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-9 col-lg-6 col-xl-5">
+          <img src="http://cintosunlaw.ca/bcmanagement/assets/images/2.png"  class="img-fluid" alt="Sample image">
+        </div>
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+          <form action="/login" method="post">
+            <p id="welcome" style="font-size: 50px; color:#212529; font-family: 'Aeonik trial'; font-weight: 700; position: absolute; top: 5%; left: 42%;">Welcome!</p>
+            <!-- username input -->
+            <div class="form-outline mb-4">
+              <input name="username" type="username" id="form3Example3" class="form-control form-control-lg"
+                placeholder="Enter a valid username" />
+              <label class="form-label" for="form3Example3"  style="font-family: 'Aeonik trial'; font-weight: 600;">Username</label>
+            </div>
+  
+            <!-- Password input -->
+            <div class="form-outline mb-3" >
+              <input name="password" type="password" id="form3Example4" class="form-control form-control-lg"
+                placeholder="Enter password" />
+              <label class="form-label" for="form3Example4"  style="font-family: 'Aeonik trial'; font-weight: 600;">Password</label>
+            </div>
+  
+            <div class="text-center text-lg-start mt-4 pt-2">
+              <button id="login" type="submit" class="btn btn-primary" style="padding-left: 14.35rem; padding-right: 14.35rem; background-color: #4361ee; margin-bottom: 30px; font-family: 'Aeonik trial'; font-weight: 600; font-size: 15px; letter-spacing:2px; text-transform: capitalize;" >log In</button>
+              <p class="small fw-bold mt-2 pt-1 mb-0" style="font-family: 'Aeonik trial';">Don't have an account? <a href="/"
+                  class="link-danger" style="font-family: 'Aeonik trial';">Register</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"></script>
+</body>
+</html>
